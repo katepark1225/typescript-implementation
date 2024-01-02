@@ -7,12 +7,13 @@ import Button from '../../component/button'
 const Logged_Out = () => {
 
   const [analytics, setAnalytics] = useState<ReportingAnalytics[]>([])
-  useEffect(() => {
+
+const renderChart = () => {
     ReportingService(payload)
     .then((data: any) => {
       setAnalytics(data.reverse())
     })
-  }, [])
+  }
 
   const calculateHeight = (value: number) => {
     // Code block --!
@@ -40,7 +41,7 @@ const Logged_Out = () => {
 
   return (
     <ScrollView>
-<Button bgColor='black' color='white' title='Render' onPress={} />
+<Button bgColor='black' color='white' title='Render' onPress={() => renderChart} />
       {barChart}
     </ScrollView>
   )
