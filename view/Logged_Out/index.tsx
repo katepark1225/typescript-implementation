@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { View, Text, ScrollView, TextInput } from 'react-native'
 import { ReportingService } from '../../services/reporting'
 import { ReportingAnalytics } from '../../interface/reporting'
+import Button from '../../component/button'
 
 const Logged_Out = () => {
 
@@ -39,6 +40,7 @@ const Logged_Out = () => {
 
   return (
     <ScrollView>
+<Button bgColor='black' color='white' title='Render' onPress={} />
       {barChart}
     </ScrollView>
   )
