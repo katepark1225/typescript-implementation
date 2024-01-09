@@ -1,0 +1,24 @@
+{
+  "name": "name",
+  "displayName": "displayName",
+  "colors": {
+    "light": {
+      "primary": "#5CE1E6",
+      "secondary": "#222831",
+      "backgroundColor": "#FFFFFF",
+      "default": "#000000",
+      "input": "#F3F3F3",
+      "helpText": "#494949",
+      "lightContainer": "rgba(244, 244, 244, 0.35)"
+    },
+    "dark": {
+      "primary": "#ff9900",
+      "secondary": "#697b96",
+      "backgroundColor": "#222831",
+      "default": "#FFFFFF",
+      "input": "#343d4b",
+      "helpText": "#697b96",
+      "lightContainer": "rgba(105, 123, 150, 0.35)"
+    }
+  }
+}
