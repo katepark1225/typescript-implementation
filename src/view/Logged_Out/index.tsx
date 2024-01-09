@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { View, Text, ScrollView, TextInput } from 'react-native'
 import { ReportingService } from '../../services/reporting'
 import { ReportingAnalytics } from '../../interface/reporting'
