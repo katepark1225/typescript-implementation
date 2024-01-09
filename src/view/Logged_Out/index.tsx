@@ -3,8 +3,11 @@ import { View, Text, ScrollView, TextInput } from 'react-native'
 import { ReportingService } from '../../services/reporting'
 import { ReportingAnalytics } from '../../interface/reporting'
 import Button from '../../component/button'
+import { useTheme } from '../../theme'
 
 const Logged_Out = () => {
+
+  const theme = useTheme()
 
   const [analytics, setAnalytics] = useState<ReportingAnalytics[]>([])
 
@@ -41,7 +44,7 @@ const renderChart = () => {
 
   return (
     <ScrollView>
-<Button bgColor='black' color='white' title='Render' onPress={() => renderChart} />
+<Button bgColor={theme.colors.backgroundColor} color='white' title='Render' onPress={() => renderChart} />
       {barChart}
     </ScrollView>
   )
